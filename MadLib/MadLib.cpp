@@ -27,7 +27,7 @@ int main()
 	cin >> verb;
 	cout << "enter a adjective: ";
 	cin >> adj2;
-	cout << "now all thing you have put in will become a short story "
+	cout << "now all thing you have put in will become a short story ";
 
 	cout << " Last weekend, I went on an adventure with " << number <<
 	" friends. We decided to explore a "
