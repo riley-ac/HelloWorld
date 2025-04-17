@@ -33,6 +33,15 @@ private:
 
 };
 
+void setValue(int* v) {
+    *v = 5;
+
+}
+void Swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 
 
 int main()
@@ -53,19 +62,15 @@ int main()
 
     Animal* dog = new Animal("Dog");
 
-    std::cout <<(*dog).getName() << std::endl;
+    std::cout << (*dog).getName() << std::endl;
     delete dog;
     dog = nullptr;
-    std::cout <<(*dog).getName() << std::endl;
+    std::cout << (*dog).getName() << std::endl;
 
     if (dog) {
-    
-std::cout << dog <<->
+
+        std::cout << dog << ->;
     }
-
-
-
-
 
 
     Animal cat("cat");
@@ -82,9 +87,30 @@ std::cout << dog <<->
     std::cout << *(block + 2) << std::endl;
     free(--block);
 
+    //
+    int v1 = 10;
+    int v2 = 20;
+
+    int* p;
+    std::cout << p << std::endl;
+    p = &v1;
+    *p = 5;
+    std::cout << p << std::endl;
+    std::cout << &v1 << std::endl;
+    p = &v2;
+    *p = 809;
+
+
+   // setValue(p);
+    // v1 = 5, v2 = 42
+    Swap(&v1, &v2);
+    std::cout << v1 << " " << v2 << std::endl;
+
+
 
 
 
 }
+
 
 

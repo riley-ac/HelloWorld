@@ -3,9 +3,11 @@
 
 
 
-void f()
+void Student::Read()
 {
-	std::cout << "hello\n";
+	std::cout << "GPA: ";
+
+
 }
 
 void Student::Write()

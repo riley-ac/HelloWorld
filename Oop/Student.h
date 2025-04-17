@@ -3,7 +3,7 @@
 #include <string>
 void f();
 
-class Student
+class Student : public Human
 {
 
 public:
